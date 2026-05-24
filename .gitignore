@@ -1,0 +1,17 @@
+# Project place file
+/MyGame.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+sourcemap.json
+wally.lock
+node_modules
+Packages/
+tools/
+package.json
+package-lock.json
+wally.lock
+.vscode/
+selene.toml

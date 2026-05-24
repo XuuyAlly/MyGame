@@ -1,0 +1,209 @@
+{
+  "emitLegacyScripts": false,
+  "name": "easy-defense",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Source": {
+        "$className": "Folder",
+        "Features": {
+          "$className": "Folder",
+          "Hotbar": {
+            "$className": "Folder",
+            "HotbarRegistry": {
+              "$path": "src/features/hotbar/HotbarRegistry.luau"
+            },
+            "HotbarServiceClient": {
+              "$path": "src/features/hotbar/HotbarServiceClient.luau"
+            },
+            "HotbarSlice": {
+              "$path": "src/features/hotbar/HotbarSlice.luau"
+            },
+            "UI": {
+              "$className": "Folder",
+              "HotbarRoot": {
+                "$path": "src/features/hotbar/ui/HotbarRoot.luau"
+              },
+              "Screens": {
+                "$className": "Folder",
+                "HotbarHud": {
+                  "$path": "src/features/hotbar/ui/screens/HotbarHud.luau"
+                }
+              }
+            }
+          },
+          "Misc": {
+            "$className": "Folder",
+            "MiscServiceClient": {
+              "$path": "src/features/misc/MiscServiceClient.luau"
+            }
+          },
+          "RootUI": {
+            "$path": "src/features/RootUI.luau"
+          },
+          "Weapon": {
+            "$className": "Folder",
+            "Modules": {
+              "$className": "Folder",
+              "Classes": {
+                "$className": "Folder",
+                "BasicSwordClient": {
+                  "$path": "src/features/weapon/modules/classes/BasicSwordClient.luau"
+                }
+              },
+              "GenUniqueId": {
+                "$path": "src/features/weapon/modules/GenUniqueId.luau"
+              },
+              "WeaponClient": {
+                "$path": "src/features/weapon/modules/WeaponClient.luau"
+              }
+            },
+            "UI": {
+              "$className": "Folder",
+              "Screens": {
+                "$className": "Folder",
+                "CurrentWeapon": {
+                  "$path": "src/features/weapon/ui/screens/CurrentWeapon.luau"
+                }
+              },
+              "WeaponRoot": {
+                "$path": "src/features/weapon/ui/WeaponRoot.luau"
+              }
+            },
+            "WeaponRegistry": {
+              "$path": "src/features/weapon/WeaponRegistry.luau"
+            },
+            "WeaponServiceClient": {
+              "$path": "src/features/weapon/WeaponServiceClient.luau"
+            },
+            "WeaponSlice": {
+              "$path": "src/features/weapon/WeaponSlice.luau"
+            },
+            "WeaponTypes": {
+              "$path": "src/features/weapon/WeaponTypes.luau"
+            }
+          }
+        },
+        "Core": {
+          "$className": "Folder",
+          "Platform": {
+            "$className": "Folder",
+            "ObjectPool": {
+              "$path": "src/core/platform/ObjectPool.luau"
+            },
+            "PathUtils": {
+              "$path": "src/core/platform/PathUtils.luau"
+            },
+            "SafeTeleport": {
+              "$path": "src/core/platform/SafeTeleport.luau"
+            }
+          },
+          "UI": {
+            "$className": "Folder",
+            "Abbreviate": {
+              "$path": "src/core/ui/Abbreviate.luau"
+            },
+            "FormatTime": {
+              "$path": "src/core/ui/FormatTime.luau"
+            },
+            "Hooks": {
+              "$className": "Folder",
+              "useDataState": {
+                "$path": "src/core/ui/hooks/useDataState.luau"
+              },
+              "useDeviceInput": {
+                "$path": "src/core/ui/hooks/useDeviceInput.luau"
+              },
+              "useViewportSize": {
+                "$path": "src/core/ui/hooks/useViewportSize.luau"
+              }
+            },
+            "Primitives": {
+              "$className": "Folder",
+              "AutoScaledFrame": {
+                "$path": "src/core/ui/primitives/AutoScaledFrame.luau"
+              },
+              "Button": {
+                "$path": "src/core/ui/primitives/Button.luau"
+              },
+              "Label": {
+                "$path": "src/core/ui/primitives/Label.luau"
+              },
+              "ScrollingFrame": {
+                "$path": "src/core/ui/primitives/ScrollingFrame.luau"
+              }
+            },
+            "Suffixes": {
+              "$path": "src/core/ui/Suffixes.luau"
+            }
+          }
+        },
+        "Game": {
+          "$className": "Folder",
+          "DataTemplate": {
+            "$path": "src/game/DataTemplate.luau"
+          }
+        },
+        "StartUp": {
+          "$className": "Folder",
+          "MountUI": {
+            "$path": "src/startup/MountUI.luau"
+          },
+          "Client": {
+            "$path": "src/startup/Client.client.luau"
+          }
+        }
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+    "ServerScriptService": {
+      "Features": {
+        "$className": "Folder",
+        "Hotbar": {
+          "$className": "Folder",
+          "HotbarServiceServer": {
+            "$path": "src/features/hotbar/HotbarServiceServer.luau"
+          }
+        },
+        "Misc": {
+          "$className": "Folder",
+          "MiscServiceServer": {
+            "$path": "src/features/misc/MiscServiceServer.luau"
+          }
+        },
+        "Weapon": {
+          "$className": "Folder",
+          "Modules": {
+            "$className": "Folder",
+            "Classes": {
+              "$className": "Folder",
+              "BasicSwordServer": {
+                "$path": "src/features/weapon/modules/classes/BasicSwordServer.luau"
+              }
+            },
+            "WeaponServer": {
+              "$path": "src/features/weapon/modules/WeaponServer.luau"
+            }
+          },
+          "WeaponServiceServer": {
+            "$path": "src/features/weapon/WeaponServiceServer.luau"
+          }
+        }
+      },
+      "Core": {
+        "$className": "Folder"
+      },
+      "Game": {
+        "$className": "Folder"
+      },
+      "StartUp": {
+        "$className": "Folder",
+        "Server": {
+          "$path": "src/startup/Server.server.luau"
+        }
+      }
+    }
+  }
+}

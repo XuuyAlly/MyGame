@@ -1,0 +1,6 @@
+--stylua: ignore
+
+return {
+    "", "K", "M", "B", "T", "Qd", "Qn", "Sx", "Sp", "O", "N", "De",
+    "Ud", "Dd", "TdD", "QdD", "QnD", "SxD", "SpD", "OcD", "NvD",
+}
